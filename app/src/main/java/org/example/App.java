@@ -75,7 +75,7 @@ public class App {
                     String source = scanner.next();
                     System.out.println("Type your destination station");
                     String destination = scanner.next();
-                    List<Train> trains = userBookingService.getTrains(source, dest);
+                    List<Train> trains = userBookingService.getTrains(source, destination);
                     int index = 1;
                     for(Train t: trains) {
                         System.out.println(index + " Train Id: " + t.getTrainId());
